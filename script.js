@@ -32,3 +32,29 @@ console.log(arr2);
 
 const sum = arr.reduce((a, b) => a + b)
 console.log(sum);
+
+
+// !Object
+const car = {
+    make: "Volkswagen",
+    model: 'T-ROC',
+    move: function () {
+        console.log(this);
+    },
+    // !don't use arrow key word in this
+    move1: () => {
+        console.log(this);
+    }
+}
+car.move();
+car.move1();
+
+// !don't use arrow key word in factory function
+
+const Car = (mode, make) => {
+    this.make = make
+    this.model = model
+}
+
+const Car1 = new Car('BMW', 'X5');
+console.log(Car1)
