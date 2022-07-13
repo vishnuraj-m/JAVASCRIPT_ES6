@@ -5,3 +5,4 @@ JAVASCRIPT_ES6
 - arrow function
 - object destructuring
 - spreading
+- template
