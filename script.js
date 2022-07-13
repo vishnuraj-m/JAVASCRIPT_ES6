@@ -134,3 +134,11 @@ const engine = {
 }
 
 console.log({ ...bus, ...engine })
+
+// !template
+
+const Name = 'Vishnu';
+const age = 30;
+
+console.log(`${Name} is ${age} years old`);
+console.log(`${Name} is ${age > 20 ? 'Old' : 'Young'}  years old`);
