@@ -111,3 +111,26 @@ const tv = {
 const { type: { display: textDisplay } } = tv; //!change name
 console.log(textDisplay);
 
+
+// !spreading an array
+const arr1 = [1, 2, 3, 4];
+const arr2 = [5, 6];
+
+console.log(arr1);
+console.log(arr2);
+console.log(...arr1);
+console.log(...arr2);
+console.log([...arr1, ...arr2]);
+
+
+// !spreading an object
+
+const bus = {
+    brand: 'volvo'
+}
+
+const engine = {
+    type: 'turbo'
+}
+
+console.log({ ...bus, ...engine })
